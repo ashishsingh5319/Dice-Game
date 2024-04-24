@@ -14,9 +14,14 @@ const Dice = ({ChangeDice,roleDice}) => {
  
   return (
     <DiceContainer>
+<<<<<<< HEAD
         <div className='' onClick={roleDice}>
         {/* <img src={cube} alt="cube" height={170}/> */}
         <img src={cube} alt="cube" />
+=======
+        <div className='dice' onClick={roleDice}>
+      <img src={require(`./images/dice_${ChangeDice}.png` )}alt="cube" height={170}/>
+>>>>>>> dabfa147fb0db90bdbe1e7b918f7eb9fbcaa7f37
       </div>
       <p>Click on Dice to roll</p>
     </DiceContainer>
