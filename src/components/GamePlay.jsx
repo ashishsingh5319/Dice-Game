@@ -30,9 +30,9 @@ const GamePlay = () => {
        
         
         if (IsNumSelected===randomNumber){
-            setscore((prev)=>prev+randomNumber);
+            setscore((prev)=> prev + randomNumber);
         }else{
-            setscore((prev)=> prev-2);
+            setscore((prev)=> prev - 2);
         }
         setIsNumSelected(undefined);
 
@@ -46,12 +46,13 @@ const GamePlay = () => {
   return (
    <MainContainer>
     <div className='top_section'>
+    <TotalScore score={score} />
         <NumberSelector 
         error= {error}
         seterror={seterror}
         IsNumSelected={IsNumSelected}
         setIsNumSelected={setIsNumSelected}/>
-        <TotalScore score={score}/>
+        
     </div>
     <Dice 
     ChangeDice={ChangeDice}

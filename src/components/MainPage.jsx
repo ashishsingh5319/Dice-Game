@@ -1,10 +1,11 @@
 import React from 'react'
-
+import logo from '../images/cube.png'
 const MainPage = ({toggle}) => {
   return (
     <div className="container">
         <div>
-      <img src="./images/cube.png" alt="dice" /></div>
+      <img src={logo} alt="cube" />
+      </div>
       
       <div className='content'>
       <h1>DICE GAME</h1>
